@@ -5,7 +5,7 @@ COPY ../packages/server/*.json ./
 RUN npm ci --production
 
 COPY ../packages/server/src ./src/
-
+COPY ../.env.prod ./.env
 # Install app dependencies
 
 

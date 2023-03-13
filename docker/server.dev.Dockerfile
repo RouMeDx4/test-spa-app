@@ -6,7 +6,7 @@ RUN npm install -g @nestjs/cli
 RUN npm install
 
 COPY ../packages/server/src ./src/
-
+COPY ../.env.dev ./.env
 # Install app dependencies
 
 
