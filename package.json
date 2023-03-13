@@ -1,0 +1,13 @@
+{
+  "name": "test-spa-app",
+  "version": "1.0.0",
+  "description": "single page application in witch users can creates comments",
+  "main": "index.js",
+  "scripts": {
+    "build-prod":"docker-compose -f docker-compose.prod.yml --env-file .env.prod up -d --build",
+    "build-dev":"docker-compose -f docker-compose.dev.yml --env-file .env.dev up -d --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman Tkachenko",
+  "license": "ISC"
+}
